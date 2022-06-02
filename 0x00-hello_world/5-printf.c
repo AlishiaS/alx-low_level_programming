@@ -2,6 +2,9 @@
 
 /**
  *  main - program entry point
+ *
+ *  Description - main returns 0
+ *  printf - Prints the string to stdout
  *  Return: 0
  */
 int main(void)
