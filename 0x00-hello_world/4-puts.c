@@ -1,3 +1,4 @@
+#!/usr/bin/env perl
 #include <stdio.h>
 
 /**
