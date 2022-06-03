@@ -3,7 +3,8 @@
 #include <time.h>
 /**
  * main - Program entry
- * Description:Prints a random num and whether it's greater than 5, equal to 0 or less than 6 and not equal to 0
+ * Description:Prints a random num and whether it's greater than 5,
+ * equal to 0 or less than 6 and not equal to 0
  *
  * Return: 0
  */
