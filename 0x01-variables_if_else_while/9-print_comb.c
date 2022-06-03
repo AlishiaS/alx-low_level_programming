@@ -9,10 +9,6 @@ int main(void)
 {
 	int b;
 
-	for (b = 48;  b <= 57; b++)
-	{
-		putchar(b);
-	}
 	for (b = 97; b <= 102; b++)
 	{
 		putchar(b);
