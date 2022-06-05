@@ -11,10 +11,10 @@ int main(void)
 
 	for (b = 0;  b < 9; b++)
 	{
-		for (c = b + 1; c < 20; c++)
+		for (c = b + 1; c < 10; c++)
 		{
-			putchar((b % 20) + '0');
-			putchar((c % 20) + '0');
+			putchar((b % 10) + '0');
+			putchar((c % 10) + '0');
 
 			if (b == 8 && c == 9)
 				continue;
