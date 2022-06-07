@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *  main - main 
+ *  main - main
  *  Return: 0
  */
 int main(void)
@@ -11,9 +11,8 @@ int main(void)
 	for (i = 0; i < 8; i++)
 	{
 		_putchar(c[i]);
-		i++;
 	}
 	_putchar('\n');
-	
+
 	return 0;
 }
