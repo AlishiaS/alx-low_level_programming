@@ -5,7 +5,15 @@
  */
 int main(void)
 {
-	write(1, "_putchar", 8);
+	char c[9] = "_putchar";
+	int  i = 0;
+
+	while (i < 9)
+	{
+		_putchar(c[i]);
+		i++;
+	}
 	_putchar('\n');
+	
 	return 0;
 }
