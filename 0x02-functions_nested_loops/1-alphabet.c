@@ -1,19 +1,18 @@
 #include "main.h"
 /**
- * Prototype: print_alphabet 
+ * print_alphabet - Function prototype 
  * Description -  prints the alphabet, in lowercase, followed by a new line
- * Return : Always 0 (Success)
+ * Return : void.
  */
-int main(void)
+void print_alphabet(void)
 {
-	char c = 'a';
+	char x = 'a';
 
-	while (c <= 'z')
+	while (x <= 'z')
 	{
-		_putchar(c);
-		c++;
+		_putchar(x);
+		x++;
 	}
 
 	_putchar('\n');
-	return (0);
 }
