@@ -2,17 +2,18 @@
 /**
  * Prototype: print_alphabet 
  * Description -  prints the alphabet, in lowercase, followed by a new line
- * Return: void
+ * Return : Always 0 (Success)
  */
-void print_alphabet(void)
+int main(void)
 {
 	char c = 'a';
 
-	while (a<= 'z')
+	while (c <= 'z')
 	{
 		_putchar(c);
 		c++;
 	}
+
 	_putchar('\n');
-	return 0;
+	return (0);
 }
