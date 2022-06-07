@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
  * main - main 
- * Prints _putchar followed by a new line
- * Return: 0
+ *  _putchar - prints _putchar followed by a new line
+ *  Return: 0
  */
-int main()
+int _putchar(char c)
 {
 	_putchar('\n');
-	return 0;
+	return (0);
 }
