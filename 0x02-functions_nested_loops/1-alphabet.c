@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - Function prototype 
+ * print_alphabet - Function prototype
  * Description -  prints the alphabet, in lowercase, followed by a new line
  * Return : void.
  */
