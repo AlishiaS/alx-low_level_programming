@@ -3,9 +3,9 @@
  * _add - adds two integers and returns the result
  * Return: sum
  */
-int add(int, int)
+int add(int a, int b)
 {
-	int a, b, sum;
+	int sum;
 
 	sum = a + b;
 
