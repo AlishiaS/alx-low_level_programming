@@ -9,17 +9,18 @@ int main(void)
 	int i;
 	long int a = 1;
 	long int s = 2;
-	long int num;
+	long int c;
 	long int max = 20365011074;
 
 	for (i = 0; i < 50; i++)
 	{
 		if (a != max)
 			printf("%ld, ", a);
-		
+
 		else 
 			printf("%ld\n", a);
-		num = a + s;
+
+		c = a + s;
 		a = s;
 		s = a;
 	}
