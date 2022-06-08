@@ -15,7 +15,6 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		if (a != max)
-		{
 			printf("%ld, ", a);
 		
 		else 
