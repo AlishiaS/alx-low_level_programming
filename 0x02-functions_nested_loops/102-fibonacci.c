@@ -8,7 +8,7 @@ int main(void)
 {
 	int i;
 	long int a = 1;
-	long int s = 2;
+	long int b = 2;
 	long int c;
 	long int max = 20365011074;
 
@@ -20,9 +20,9 @@ int main(void)
 		else 
 			printf("%ld\n", a);
 
-		c = a + s;
-		a = s;
-		s = a;
+		c = a + b;
+		a = b;
+		b = a;
 	}
 		return (0);
 }
