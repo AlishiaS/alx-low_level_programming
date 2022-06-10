@@ -17,14 +17,14 @@ void print_triangle(int size)
 		{
 			for (space = 1; space <= rows - i; ++space)
 			{
-				printf("  ");
+				_putchar(' ');
 			}
 			while (k != 2 * i - 1)
 			{
-				printf("# ");
+				_putchar('# ');
 				++k;
 			}
-			printf("\n");
+			_putchar('\n');
 		}
 	}
 	return (0);
