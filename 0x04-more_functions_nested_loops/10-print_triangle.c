@@ -8,14 +8,17 @@ void print_triangle(int size)
 {
 	int i, k;
 
-	for (i = 1; i = size; i++)
+	for ( i = 1; i <= size; i ++)
 	{
-		for (k = 1; k <= i; k++)
+		for (k = size; k > i; k--)
 		{
-			_putchar('# ');
+			printf(" ");
 		}
-		_putchar('\n');
+		for (int n = 1; n <= i; n++)
+		{
+			printf(" #");
+		}
+		printf("\n");
 	}
 	return (0);
 }
-
