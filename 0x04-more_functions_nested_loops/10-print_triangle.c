@@ -6,20 +6,21 @@
  */
 void print_triangle(int size)
 {
-	int i, space, rows = size, k = 0;
+	int i = 0, j, k = size - 1;
 
-	for (i = 1; i <= rows; ++i, k = 0)
+	if (size <= 0)
 	{
-		for (space = 1; space <= rows - i; ++space)
+		_putchar('\n');
+	else
+	{
+		for (; i < size; i++)
 		{
-			printf(" ");
+			for (j = 0; size; j++)
+			
+				_putchar(j < k ? ' ' : '#');
+
+			k--;
+			_putchar('\n');
 		}
-		while (k != 2 * i - 1)
-		{
-			printf("# ");
-			++k;
-		}
-		printf("\n");
 	}
-	return (0);
 }
