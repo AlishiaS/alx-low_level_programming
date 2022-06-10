@@ -6,17 +6,13 @@
  */
 void print_triangle(int size)
 {
-	int i, k;
+	int i, j, rows = size;
 
-	for ( i = 1; i <= size; i ++)
+	for (i = 1; i <= rows; ++i)
 	{
-		for (k = size; k > i; k--)
+		for (j = 1; j <= i; ++j)
 		{
-			printf(" ");
-		}
-		for (int n = 1; n <= i; n++)
-		{
-			printf(" #");
+			printf("* ");
 		}
 		printf("\n");
 	}
