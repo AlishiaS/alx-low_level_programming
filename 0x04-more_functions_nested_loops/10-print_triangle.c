@@ -27,5 +27,5 @@ void print_triangle(int size)
 			printf("\n");
 		}
 	}
-	return 0;
+	return (0);
 }
