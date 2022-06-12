@@ -14,9 +14,9 @@ int main(void)
 			while(n%i == 0)
 			{
 				a = i;
-				n/ = i;
+				n/= i;
 			}
 		}
-		if (n > 1) f = n;
+		if (n > 1) a = n;
 			printf("%ld\n", a);
 }
