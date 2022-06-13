@@ -1,7 +1,6 @@
 # include "main.h"
 /**
- * main - main
- * reset_to_98 - resets to 98
+ * reset_to_98 - reset to 98
  * @n: pointer
  * Return: void
  */
