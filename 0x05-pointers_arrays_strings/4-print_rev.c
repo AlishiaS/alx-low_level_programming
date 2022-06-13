@@ -6,10 +6,14 @@
  */
 void print_rev(char *s)
 {
-	if (*s != '\0')
+	int i = 0;
+
+	while (str[i] != '0')
+		i++;
+
+	while (i--)
 	{
-		print_rev(s + 1);
-		printf("%s, *s");
+		_putchar(s[i]);
 	}
-	return (0);
+	_putchar('\n');
 }
