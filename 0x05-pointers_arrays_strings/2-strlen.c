@@ -7,11 +7,9 @@
  */
 int _strlen(char *s)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; ++i);
+	while(tr[i] != '\0') i++;
 
-		printf("Length of s is %d", i);
-
-	return (0);
+	return (i);
 }
