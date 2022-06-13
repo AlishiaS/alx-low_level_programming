@@ -5,7 +5,7 @@
  * @b: pointer
  * Return: void
  */
-void swap_int(int *a, *b)
+void swap_int(int *a, int *b)
 {
 	*a = *a + *b;
 	*b = *a - *b;
