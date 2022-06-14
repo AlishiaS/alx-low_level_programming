@@ -7,22 +7,13 @@
  */
 void rev_string(char *s)
 {
-	char temp;
-	int length = 0;
-
-	while (s[length] != '\0')
+	int i, c = 0;
+	for (i = 0; *(s + 1) != '\0'; i++0)
 	{
-		length++;
+		c++;
 	}
-	printf("The length of this string is %d\n", length)
-
-	for (int i = 0; i < (lenth -1) /2; i++)
+	for (i = c - 1; i >= 0; i--)
 	{
-		temp = s[i];
-		s[i] = s[length - 1 - i];
-		s[length - 1 - i] = temp;
+		printf("%c", *(s + 1));
 	}
-	prinf("String is now %s, s");
-
-	return 0;
 }
