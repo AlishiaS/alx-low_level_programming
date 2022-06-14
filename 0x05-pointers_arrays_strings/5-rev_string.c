@@ -2,17 +2,19 @@
 #include <stdio.h>
 /**
  * rev_string - reverses a string
- * rev_string - reverses a string
+ * @s: string to be reveresed
  * Return: void
  */
 void rev_string(char *s)
 {
-	char ch [] = temp;
+	int i, len, temp;
 
-	for (int i = strlen(ch) - 1; i>= 0; i--)
+	len = strlen(str1);
+
+	for (i = 0; i < len/2; i++)
 	{
-		printf("%c, ch[i]");
+		temp = str1[i];
+		str1[i] = str1[len - i - 1];
+		str1[len - i - 1] = temp;
 	}
-
-	return 0;
 }
