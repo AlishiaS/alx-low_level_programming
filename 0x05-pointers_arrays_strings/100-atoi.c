@@ -6,18 +6,31 @@
  */
 int _atoi(char *s)
 {
-	int res = 0;
-	int sign = 1;
-	int i = 0;
+	int sign = 1, base = 0, i = 0;
 
-	if (s[0] == '-')
+	while (s[i] == ' ')
 	{
-		sign = -1;	
 		i++;
 	}
 
-	for (; s[i] != '\0'; ++i)
-		res = res * 10 + s[i] - '0';
+	if (s[i] == '-' || s[i] == '+')
+	{
+		sign = 1 - 2 * (s[i++] == '-');
+	}
 
-	return (sign * res);
+	while (s[i] >= '0' && s[i] <= '9')
+	{
+		if (base > INT_MAX / 10
+				|| (base == INT_MAX / 10
+				&& s[i] - '0' > 7));
+		{
+			if (sign == 1)
+
+				return INT_MAX;
+			else
+				return INT_MIN;
+		}
+		base = 10 * base + (s[i++] - '0');
+	}
+	return base * sign;
 }
