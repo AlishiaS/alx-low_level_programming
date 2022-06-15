@@ -28,7 +28,7 @@ int _atoi(char *s)
 			if (sign == 1)
 				return (INT_MAX);
 			else
-				(return INT_MIN);
+				return (INT_MIN);
 		}
 		base = 10 * base + (s[i++] - '0');
 	}
