@@ -3,7 +3,7 @@
 #include <string.h>
 /**
  * _strcat - concatenates two strings
- * @dest : Destination string 
+ * @dest : Destination string
  * @src : Source string
  * Return : dest
  */
@@ -17,5 +17,5 @@ char *_strcat(char *dest, char *src)
 	}
 	*len = '\0';
 
-	return *len;
+	return (*len);
 }
