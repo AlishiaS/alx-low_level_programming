@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *  _strcat - concatenates two strings
+ *  _strcat : Description - concatenates two strings
  *  @dest : Destination string
  *  @src : Source string
  *  Return : void
@@ -13,18 +13,14 @@ char *_strcat(char *dest, char *src)
 
 	while (dest[i] != '\0')
 	{
-		++dest;
 		i++;
 	}
 
 	while (src[j] != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		*dest[i] = *src[j];
+		i++;
 		j++;
-
-		return (dest);
 	}
-	return (0);
+	return (dest);
 }
