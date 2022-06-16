@@ -6,11 +6,11 @@
  *  Description - concatenates two strings
  *  @dest : Destination string
  *  @src : Source string
- *  Return : void
+ *  Return : pointer to destination string
  */
 char *_strcat(char *dest, char *src)
 {
-	int i, j = 0;
+	int j = -1, i;
 
 	for (i = 0; dest[i] != '\0'; i++)
 		;
