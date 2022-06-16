@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * _strncpy - copies a string.
+ * * _strncpy - Function Prototype
+ * Description - copies a string
  * @n: int
- * @dest : Destination string 
+ * @dest : Destination string
  * @src : Source string
  * Return : dest
  */
