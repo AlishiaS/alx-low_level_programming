@@ -4,18 +4,20 @@
 /**
  * _strncat - concatenates two strings
  * @n: number of bytes
- * @dest : Destination string
- * @src : Source string
+ * @dest :Pointer to Destination string
+ * @src :Pointer to Source string
  * Return: pointer to destination string
  */
 char *_strncat(char *dest, char *src, int n);
 {
-	int a, i
+	int i;
 
-	for (a = 0 ; a < n && src[i] != '\0' ; i++)
-		dest[a] = src[i];
+	for (i = 0 ; i < n && src[i] != '\0' ; i++)
+	{
+		dest[i] = src[i];
+	}
 
-	for (i = 0; i < n; i++)
+	for (; i < n; i++)
 	{
 		dest[i] = '\0';
 	}
