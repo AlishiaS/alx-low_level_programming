@@ -15,7 +15,7 @@ char *cap_string(char *s)
 	{
 		if ((spaceCount % 2 == 1) && s[i] >= 'a' && s[i] <= 'z')
 		{
-			s[i] = s[i] - 'a' + 'A';
+			s[i] = s[i] - 32;
 		}
 		else if (s[i] == ',')
 		{
