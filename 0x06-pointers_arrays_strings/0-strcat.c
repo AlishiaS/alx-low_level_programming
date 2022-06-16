@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *  _strcat - Function Prototype
+ *  *_strcat - Function Prototype
  *  Description - concatenates two strings
  *  @dest : Destination string
  *  @src : Source string
