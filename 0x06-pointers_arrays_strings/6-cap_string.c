@@ -13,11 +13,11 @@ char *cap_string(char *s)
 
 	while (s[i] != '\0')
 	{
-		if ((spaceCount %2 == 1) && s[i] >= 'a' && s[i] <= 'z')
+		if ((spaceCount % 2 == 1) && s[i] >= 'a' && s[i] <= 'z')
 		{
 			s[i] = s[i] - 'a' + 'A';
 		}
-		else if(s[i] == ',')
+		else if (s[i] == ',')
 		{
 			spaceCount++;
 		}
