@@ -3,7 +3,7 @@
  * string_toupper - Function Prototype
  * Description - changes all lowercase letters of a string to uppercase
  * @s : String to be changed
- * Return : :Pointer to the s
+ * Return: Pointer to the string
  */
 char *string_toupper(char *s)
 {
@@ -17,5 +17,5 @@ char *string_toupper(char *s)
 		}
 		i++;
 	}
-	return s;
+	return (s);
 }
