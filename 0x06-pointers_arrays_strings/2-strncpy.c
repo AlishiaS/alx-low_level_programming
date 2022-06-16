@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncpy - Function Prototype
+ * *_strncpy - Function Prototype
  * Description - copies a string
  * @n: int
  * @dest : Destination string
