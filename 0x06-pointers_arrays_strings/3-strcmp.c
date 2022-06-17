@@ -2,9 +2,9 @@
 /**
  * _strcmp - Function Prototype
  * Description - compares two strings
- * @s1 : String 1
- * @s2 : String 2
- * Return : String 1 and String 2
+ * @s1: Pointer to string 1
+ * @s2: Pointer to string 2
+ * Return: Pointer to string 1 and string 2
  */
 int _strcmp(char *s1, char *s2)
 {
