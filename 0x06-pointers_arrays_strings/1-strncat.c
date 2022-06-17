@@ -1,5 +1,4 @@
 #include "main.h"
-int _strlen(char *s)
 /**
  * _strncat - concatenates two strings
  * @n: number of bytes
