@@ -3,9 +3,9 @@
  * *_strncpy - Function Prototype
  * Description - copies a string
  * @n: int
- * @dest : Destination string
- * @src : Source string
- * Return : dest
+ * @dest: Pointer to destination string
+ * @src :Pointer to source string
+ * Return : pointer to the resulting string dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
