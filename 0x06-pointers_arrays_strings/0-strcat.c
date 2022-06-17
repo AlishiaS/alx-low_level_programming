@@ -4,22 +4,23 @@
 /**
  *  *_strcat - Function Prototype
  *  Description - concatenates two strings
- *  @dest : Destination string
- *  @src : Source string
- *  Return : pointer to destination string
+ *  @dest: Pointer to destination string
+ *  @src : Pointer to source string
+ *  Return : Pointer to destination string
  */
 char *_strcat(char *dest, char *src)
 {
-	int j = -1, i;
+	int i, j;
 
-	for (i = 0; dest[i] != '\0'; i++)
-		;
-
-	do {
-		j++;
+	for(i = 0; dest[i]!='\0'; i++);
+	{
+	}
+	for(j = 0; src[j]!='\0'; j++)
+	{
 		dest[i] = src[j];
 		i++;
-	} while (src[j] != '\0');
+	}
+	dest[i] = '\0';
 
 	return (dest);
 }
