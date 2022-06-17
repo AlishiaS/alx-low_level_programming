@@ -8,19 +8,24 @@
  */
 char *cap_string(char *s)
 {
-	int i = 0;
-	int spaceCount = 0;
+	int a;
+	int length = _strlen(s);
 
-	while (s[i] != '\0')
+	for (a = 0; a < length; a++)
 	{
-		if ((spaceCount % 2 == 1) && s[i] >= 'a' && s[i] <= 'z')
+		if (a == 0 && s[a] >= 'a' && s[a] <= 'z')
+			s[a] = s[a] - 32;
+		if (s[a] >= 'a' && s[a] <= 'z')
 		{
-			s[i] = s[i] - 32;
+			if (s[a - 1] == ' ' || s[a - 1] == '\t' ||
+				s[a - 1] == '\n' || s[a - 1] == ',' ||
+				s[a - 1] == ';' || s[a - 1] == '.' ||
+				s[a - 1] == '!' || s[a - 1] == '?' ||
+				s[a - 1] == '"' || s[a - 1] == '(' ||
+				s[a - 1] == ')' || s[a - 1] == '{' ||
+				s[a - 1] == '}')
+					s[a] = s[a] - 32;
 		}
-		else if (s[i] == ',')
-		{
-			spaceCount++;
-		}
-		i++;
 	}
+	return (s);
 }
