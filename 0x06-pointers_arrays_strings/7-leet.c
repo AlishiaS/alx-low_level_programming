@@ -9,15 +9,14 @@
 char *leet(char *s)
 {
 	int i, b;
-	char s1[] = "aeotl";
-	char s2[] = "AEOTL";
-	char s3[] = "43071";
+	char s1[] = "AaEeOoTtLl";
+	char s2[] = "43071";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (b = 0; b < 5; b++)
 		{
-			if (s[i] == s1[b] || s[i] == s2[b])
+			if (s[i] == s1[b] || s[i] == s1[b])
 			{
 				s[i] = s2[b];
 				break;
