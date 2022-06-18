@@ -17,8 +17,8 @@ void print_times_table(int n)
 	{
 		for (a = 0; a <= n; a++)
 		{
-			num = i * a;
-			_putchar("\n%d * %d = %d\t"; i, a);
+			n = i * a;
+			_putchar('%d * %d = %d\t', i, a);
 		}
 		_putchar('\n');
 	}
