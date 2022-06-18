@@ -7,26 +7,26 @@
  * @s : String to be changed
  * Return: Pointer to the string
  */
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	int a;
-	int length = strlen(str);
+	int length = strlen(s);
 
 	for (a = 0; a < length; a++)
 	{
-		if (a == 0 && str[a] >= 'a' && str[a] <= 'z')
-			str[a] = str[a] - 32;
-		if (str[a] >= 'a' && str[a] <= 'z')
+		if (a == 0 && s[a] >= 'a' && s[a] <= 'z')
+			s[a] = s[a] - 32;
+		if (s[a] >= 'a' && s[a] <= 'z')
 		{
-		if (str[a - 1] == ' ' || str[a - 1] == '\t' ||
-				str[a - 1] == '\n' || str[a - 1] == ',' ||
-				str[a - 1] == ';' || str[a - 1] == '.' ||
-				str[a - 1] == '!' || str[a - 1] == '?' ||
-				str[a - 1] == '"' || str[a - 1] == '(' ||
-				str[a - 1] == ')' || str[a - 1] == '{' ||
-				str[a - 1] == '}')
-					str[a] = str[a] - 32;
+			if (s[a - 1] == ' ' || s[a - 1] == '\t' ||
+				s[a - 1] == '\n' || s[a - 1] == ',' ||
+				s[a - 1] == ';' || s[a - 1] == '.' ||
+				s[a - 1] == '!' || s[a - 1] == '?' ||
+				s[a - 1] == '"' || s[a - 1] == '(' ||
+				s[a - 1] == ')' || s[a - 1] == '{' ||
+				s[a - 1] == '}')
+					s[a] = s[a] - 32;
 		}
 	}
-	return (str);
+	return (s);
 }
