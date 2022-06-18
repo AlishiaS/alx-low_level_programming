@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
 /**
  * cap_string - Function Prototype
  * Description - apitalizes all words of a string
