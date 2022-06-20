@@ -3,9 +3,9 @@
 /**
  * _strspn - Function Prototype
  * Description - gets the length of a prefix substring.
- * @s : string to be checked
- * @accept : set of bytes to be searched
- * Return : 0
+ * @s: string to be checked
+ * @accept: set of bytes to be searched
+ * Return: Number of bytes
  */
 unsigned int _strspn(char *s, char *accept)
 {
