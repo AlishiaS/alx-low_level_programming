@@ -4,7 +4,7 @@
  * *_strstr - Function Prototype
  * Description - locates a substring
  * @haystack: string to search
- * @needle: substring to be searched 
+ * @needle: substring to be searched
  * Return:  pointer to the beginning of the located substring,
  *             or NULL if the substring is not found.
  */
@@ -19,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
 	{
 		if (haystack[i] == needle[i])
 		{
-			do{
+			do {
 				if (needle[i + 1] == '\0')
 					return (haystack);
 
