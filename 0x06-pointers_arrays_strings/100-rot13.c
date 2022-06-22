@@ -11,7 +11,7 @@ char *rot13(char *s)
 	int a = 0, b = 0, n = -1;
 	char alpha[] = "ANBOCPDQERFSGTHUIVJWKXLYMZanbocpdqerfsgthuivjwkxlymz";
 
-	for (a = 0; s[a]; x++)
+	for (a = 0; s[a]; a++)
 	{
 		n = 1;
 		for (b = 0; s[a] != alpha[b] && b < 52; b++)
