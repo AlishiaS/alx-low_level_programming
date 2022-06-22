@@ -6,32 +6,18 @@
  * @s : String to be encoded
  * Return: Pointer to s
  */
-char *rot13(char *)
+char *rot13(char *s)
 {
-	int i = 0, a;
-	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
-				'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
-				'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
-				'k', 'l', 'm', 'n', 'o', 'p','q', 'r', 's', 't', 'u', 'v',
-				'w', 'x', 'y', 'z'};
+	int a = 0, b = 0, n = -1;
+	char alpha[] = "ANBOCPDQERFSGTHUIVJWKXLYMZanbocpdqerfsgthuivjwkxlymz";
 
-	char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S, 'T', 'U', 'V', 'W', 'X', 'Y',
-				'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
-				'L', 'M', 'n', 'o', 'p', 'q','r', 's', 't', 'u', 'v', 'w',
-				'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
-				'j', 'k', 'l', 'm'};
-
-	while (s[i])
+	for (a = 0; s[a]; x++)
 	{
-		for (a = 0; a < 52; a++)
-		{
-			if (str[i] == alphabet[i])
-			{
-				str[i] = rot13key[a];
-				break;
-			}
-		}
-		i++;
+		n = 1;
+		for (b = 0; s[a] != alpha[b] && b < 52; b++)
+			n = (n * -1);
+		if (s[a] == alpha[b])
+			s[a] = (s[a] + (13 * n));
 	}
 	return (s);
 }
