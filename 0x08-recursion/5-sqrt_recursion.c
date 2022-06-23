@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * sqrt - Returns the natural sqare root of a number
+ * _sqrt - Returns the natural sqare root of a number
  * @n: number to be sqared
  * @r: square root
  * Return: square root of number.
