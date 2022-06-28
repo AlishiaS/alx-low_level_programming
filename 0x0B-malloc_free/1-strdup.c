@@ -18,6 +18,6 @@ char *_strdup(char *str)
 	if ((dup = malloc(str_size)) == NULL)
 		return (NULL);
 
-	(void)memcpy(str, str_size, dup);
+	(void)memcpy(str, str_size, *dup)
 	return (dup);
 }
