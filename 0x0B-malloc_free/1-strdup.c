@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	if ((dup == malloc (size)) == NULL)
+	if ((dup = malloc (size)) == NULL)
 		return (NULL);
 
 	(void)memcpy(dup, str, size);
