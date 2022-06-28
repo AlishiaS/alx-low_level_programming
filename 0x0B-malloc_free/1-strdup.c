@@ -15,10 +15,13 @@ char *_strdup(char *str)
 
 	size = strlen(str) + 1;
 
-	if ((dup = malloc(size)) == NULL)
-		return(NULL);
+	if (str == NULL)
+		return (NULL);
+
+	if ((dup == malloc (size)) == NULL)
+		return (NULL);
 
 	(void)memcpy(dup, str, size);
 
-	return(dup);
+	return (dup);
 }
