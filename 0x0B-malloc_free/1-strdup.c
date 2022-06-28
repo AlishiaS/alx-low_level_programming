@@ -10,14 +10,15 @@
  */
 char *_strdup(char *str)
 {
-	char *
+	size_t size;
+	char *dup;
 
-	int len = strlen (str) + 1;
+	size = strlen(str) + 1;
 
-	void *new = malloc (len);
+	if ((dup = malloc(size)) == NULL)
+		return(NULL);
 
-	if (new == NULL)
-		return NULL;
+	(void)memcpy(dup, str, size);
 
-	return (char *) memcpy(new, str, len);
+	return(dup);
 }
