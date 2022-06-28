@@ -7,7 +7,7 @@
  *	a pointer to the duplicated string,
  *	NULL if insufficient memory was available.
  */
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	int str_size;
 	char *dup;
