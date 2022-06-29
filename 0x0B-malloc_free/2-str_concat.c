@@ -3,11 +3,9 @@
 #include<string.h>
 /**
  * *str_concat - concatenates two strings
- * @s1: string to be concatenated 
- * @s2: string to be concatenated
- * Returns: NULL on failure,
- *	a pointer to the duplicated string,
- *	NULL if insufficient memory was available. 
+ * @s1: string 1
+ * @s2: string 2
+ * Returns: pointer
  */
 char *str_concat(char *s1, char *s2)
 {
