@@ -3,9 +3,9 @@
  * main - multilpies two numbers
  * @argc: number of arguments
  * @argv: array of pointers
- * Return: 0
+ * Return: 0 if two arguments are passed, else 0.
  */
-int main(int argc, char *argv[])
+int main(const int argc, char const *argv[])
 {
 	if (argc != 3)
 	{
