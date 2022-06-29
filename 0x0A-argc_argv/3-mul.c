@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	(void)argc;
+	int n1, n2, result
 
 	if (argc != 3)
 	{
@@ -15,7 +15,11 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	printf("%i\n", atoi(argv[1]) * atoi(argv[2]));
+	n1 = atoi(argv[1]);
+	n2 = atoi(argv[2]);
+	result = n1 * n2;
+
+	printf("%d\n", result);
 
 	return (o);
 }
