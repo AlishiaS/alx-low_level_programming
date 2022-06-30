@@ -15,14 +15,16 @@ char *_strdup(char *str)
 	str = (int*) malloc(n * sizeof(int));
 
 	if (str == NULL)
+	{
 		return (NULL);
+	}
 
 	for (i = 0; i < n; i++)
 	{
 		sum += *(str + i);
 	}
 
-	printf("%d", sum);
+	printf("Sum =%d", sum);
 
 	free (str);
 
