@@ -7,7 +7,7 @@
  * @max: int
  * Return: pointer to newly created array.
  */
-int *array_range(int min, int max);
+int *array_range(int min, int max)
 {
 	int *n, a, size;
 
