@@ -24,7 +24,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	a = 0;
 
-	while (str < nmemb * size)
+	while (str < (nmemb * size))
 	{
 		str[a] = 0;
 		a++;
