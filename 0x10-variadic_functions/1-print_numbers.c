@@ -4,7 +4,8 @@
 #include <stdlib.h>
 /**
  * print_numbers -  prints numbers
- * @n: unsigned int
+ * @separator: string to be printed between numbers
+ * @n: number of integers passed to the function
  * @...: A variable number of numbers to be printed
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
