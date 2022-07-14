@@ -3,19 +3,21 @@
 /**
  * print_list - print elements of a linked list
  * @h: linked list
- * Return: number of elements
+ * Return: number of nodes
  */
 size_t print_list(const list_t *h)
 {
-	size_t n_nodes = 0;
-	const list_t *c = h;
+	size_t nodes = 0;
 
-	while (c != NULL)
+	while (h)
 	{
-		printf("[%d] %s\n", c->len,
-		c->str != NULL ? c->str : "(nil)");
-		c = c->next;
-		n_nodes++;
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%d] %s\n", h->len, h->str);
+
+		nodes++;
+		h = h->next;
 	}
-	return (n_nodes);
+	return (nodes);
 }
