@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * print_list - print elements of a linked list
+ * print_list - prinst elements of a linked list
  * @h: linked list
  * Return: number of nodes
  */
@@ -11,7 +11,7 @@ size_t print_list(const list_t *h)
 {
 	size_t nodes = 0;
 
-	while (h)
+	while (*h)
 	{
 		if (h->str == NULL)
 			printf("[0] (nil)\n");
@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
 			printf("[%d] %s\n", h->len, h->str);
 
 		nodes++;
-		h = h->next;
+		*h = h->next;
 	}
 	return (nodes);
 }
