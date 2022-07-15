@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - multilpies two numbers
  * @argc: number of arguments
