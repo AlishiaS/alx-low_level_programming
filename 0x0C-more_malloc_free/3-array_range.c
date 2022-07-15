@@ -20,6 +20,7 @@ int *array_range(int min, int max);
 	if (n == NULL)
 		return (NULL);
 
+<<<<<<< HEAD
 	a = 0;
 
 	while (min <= max)
@@ -28,5 +29,10 @@ int *array_range(int min, int max);
 		min++;
 		a++;
 	}
+=======
+	for (a = 0; a < size; a++)
+		n[a] = min++;
+	
+>>>>>>> parent of 623b9f9 (array_range)
 	return (n);
 }
