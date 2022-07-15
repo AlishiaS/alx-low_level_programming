@@ -20,7 +20,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (i != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
+<<<<<<< HEAD
 	printf("\n");
 
+=======
+>>>>>>> parent of 9aee5f6 (To be is to be the value of a variable)
 	va_end(list);
+
+	putchar('\n');
 }
