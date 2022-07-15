@@ -1,7 +1,10 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of f149737 (A door is what a dog is perpetually on the wrong side of)
 /**
  * new_dog - create new data structure for dog
  * @name: name of dog
@@ -42,8 +45,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
+<<<<<<< HEAD
 	new_dog->owner = _strcpy(new_dog->owner, owner);
 	new_dog->age = age;
+=======
+	new_dog->name = _strcopy(new_dog->name, name);
+	new_dog->age = age;
+	new_dog->owner = _strcopy(new_dog->owner, owner);
+>>>>>>> parent of f149737 (A door is what a dog is perpetually on the wrong side of)
 
 	return (new_dog);
 }
