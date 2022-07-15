@@ -19,6 +19,11 @@ int main(int argc, char *argv[])
 	n2 = atoi(argv[2]);
 	result = n1 * n2;
 
+<<<<<<< HEAD
 	printf("%d\n", result)
+=======
+	printf("%d\n", result);
+
+>>>>>>> parent of 50787ce (Neither irony nor sarcasm is argument)
 	return (o);
 }
