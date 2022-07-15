@@ -5,25 +5,24 @@
  * @argv: array of pointers
  * Return: 0 if two arguments are passed, else 0.
  */
-int main(int argc, char *argv[])
+int main(const int argc, char const *argv[])
 {
-	int n1, n2, result;
-
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return(1);
+		return (1);
 	}
 
-	n1 = atoi(argv[1]);
-	n2 = atoi(argv[2]);
-	result = n1 * n2;
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	printf("%d\n", result)
 =======
 	printf("%d\n", result);
 
 >>>>>>> parent of 50787ce (Neither irony nor sarcasm is argument)
+=======
+>>>>>>> parent of 15bf4de (Neither irony nor sarcasm is argument)
 	return (o);
 }
