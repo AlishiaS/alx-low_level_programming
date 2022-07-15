@@ -1,4 +1,11 @@
 #include "main.h"
+<<<<<<< HEAD
+=======
+
+int _sqrt_recursion(int n);
+int _sqrt(int n, int r);
+
+>>>>>>> parent of 7f7693d (Your subconscious is looking for the dreamer)
 /**
  * _sqrt_recursion - returns the natural sqare root of a number
  * @n: number to square
