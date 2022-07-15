@@ -9,26 +9,28 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *str;
+	char *s;
 	unsigned int a;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	str = malloc(size * nmemb);
+	s = malloc(size * nmemb);
 
-	if (str == NULL)
-	{
+	if (s == NULL)
 		return (NULL);
-	}
 
 	a = 0;
 
+<<<<<<< HEAD
 	while (str < (nmemb * size))
+=======
+	while (s < (nmemb * size))
+>>>>>>> parent of 8e457f2 (_calloc)
 	{
-		str[a] = 0;
+		s[a] = 0;
 		a++;
 	}
 
-	return (str);
+	return (s);
 }
