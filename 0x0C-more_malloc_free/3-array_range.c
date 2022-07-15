@@ -20,8 +20,13 @@ int *array_range(int min, int max);
 	if (n == NULL)
 		return (NULL);
 
-	for (a = 0; min + a <= max; a++)
-		n[a] = min + 1;
-	
+	a = 0;
+
+	while (min <= max)
+	{
+		n[a] = min;
+		min++;
+		a++;
+	}
 	return (n);
 }
