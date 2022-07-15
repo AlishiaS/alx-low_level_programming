@@ -10,26 +10,18 @@
  */
 char *_strdup(char *str)
 {
-	char *s;
-	unsigned int a;
-	int n;
+	size_t size;
+	char *dup;
 
-	if (s == NULL)
-		reurn (NULL);
+	size = strlen(str) + 1;
 
-	for (n = 0; str[n] != '\0'; n++)
-		;
-
-	s = (char *)malloc(n + 1 * sizeof(char));
-
-	if (s != NULL)
-	{
-		for (a = 0; str[a] != '\0'; a++)
-			s[a] = str[a];
-	}else
-	{
+	if (str == NULL)
 		return (NULL);
-	}
-	s[a] = '\0';
-	return (s);
+
+	if ((dup = malloc (size)) == NULL)
+		return (NULL);
+
+	(void)memcpy(dup, str, size);
+
+	return (dup);
 }
