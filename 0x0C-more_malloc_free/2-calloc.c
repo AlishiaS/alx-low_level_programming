@@ -23,7 +23,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	a = 0;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	while (str < (nmemb * size))
+=======
+	while (s < (nmemb * size))
+>>>>>>> parent of 8e457f2 (_calloc)
 =======
 	while (s < (nmemb * size))
 >>>>>>> parent of 8e457f2 (_calloc)
