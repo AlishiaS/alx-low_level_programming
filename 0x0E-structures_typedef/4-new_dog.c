@@ -6,6 +6,42 @@
 =======
 >>>>>>> parent of f149737 (A door is what a dog is perpetually on the wrong side of)
 /**
+ * _strlen - determinates the length of a string
+ * @s: pointer to string
+ * Return: length
+ */
+int _strlen(char *s)
+{
+	int b;
+
+	for (b = 0; s[b] != '\0'; b++)
+		;
+
+	return (b);
+}
+
+
+/**
+ * _strcpy - copies a pointed string
+ * @dest: pointer to the destination string
+ * @src: pointer to the source string
+ * Return: the address of the destination string
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int b = 0;
+
+	while (src[b] != '\0')
+	{
+		dest[] = src[b];
+		b++;
+	}
+	dest[b] = '\0';
+	return (dest);
+}
+
+
+/**
  * new_dog - create new data structure for dog
  * @name: name of dog
  * @age: age of dog
