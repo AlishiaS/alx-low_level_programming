@@ -18,8 +18,17 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
+<<<<<<< HEAD
 	if ((dup = malloc (size)) == NULL)
 		return (NULL);
+=======
+	for (i = 0; i < n; i++)
+	{
+		sum += *(str + i);
+	}
+
+	printf("%d", sum);
+>>>>>>> parent of f5bd683 (The woman who has no imagination has no wings)
 
 	(void)memcpy(dup, str, size);
 
