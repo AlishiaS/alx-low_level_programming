@@ -9,19 +9,32 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+<<<<<<< HEAD
 	char *s;
+=======
+	char *str;
+>>>>>>> parent of 553dbaa (_calloc)
 	unsigned int a;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
+<<<<<<< HEAD
 	s = malloc(size * nmemb);
 
 	if (s == NULL)
+=======
+	str = malloc(size * nmemb);
+
+	if (str == NULL)
+	{
+>>>>>>> parent of 553dbaa (_calloc)
 		return (NULL);
+	}
 
 	a = 0;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	while (str < (nmemb * size))
@@ -37,4 +50,13 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 
 	return (s);
+=======
+	while (str < (nmemb * size))
+	{
+		str[a] = 0;
+		a++;
+	}
+
+	return (str);
+>>>>>>> parent of 553dbaa (_calloc)
 }
