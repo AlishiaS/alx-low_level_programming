@@ -21,6 +21,7 @@ int *array_range(int min, int max);
 		return (NULL);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	a = 0;
 
 	while (min <= max)
@@ -32,6 +33,10 @@ int *array_range(int min, int max);
 =======
 	for (a = 0; a < size; a++)
 		n[a] = min++;
+=======
+	for (a = 0; min + a <= max; a++)
+		n[a] = min + 1;
+>>>>>>> parent of 32d8783 (array_range)
 	
 >>>>>>> parent of 623b9f9 (array_range)
 	return (n);
