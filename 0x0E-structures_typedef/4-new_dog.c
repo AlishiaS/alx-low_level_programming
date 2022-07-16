@@ -3,6 +3,7 @@
 #include <stdlib.h>
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f149737 (A door is what a dog is perpetually on the wrong side of)
 /**
@@ -41,6 +42,8 @@ char *_strcpy(char *dest, char *src)
 }
 
 
+=======
+>>>>>>> parent of 1e47dc7 (A door is what a dog is perpetually on the wrong side of)
 /**
  * new_dog - create new data structure for dog
  * @name: name of dog
@@ -82,6 +85,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	new_dog->owner = _strcpy(new_dog->owner, owner);
 	new_dog->age = age;
 =======
@@ -89,6 +93,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new_dog->age = age;
 	new_dog->owner = _strcopy(new_dog->owner, owner);
 >>>>>>> parent of f149737 (A door is what a dog is perpetually on the wrong side of)
+=======
+	new_dog->owner = _strcpy(new_dog->owner, owner);
+	new_dog->age = age;
+>>>>>>> parent of 1e47dc7 (A door is what a dog is perpetually on the wrong side of)
 
 	return (new_dog);
 }
