@@ -19,6 +19,7 @@ char *_strdup(char *str)
 		return (NULL);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ((dup = malloc (size)) == NULL)
 		return (NULL);
 =======
@@ -29,6 +30,10 @@ char *_strdup(char *str)
 
 	printf("%d", sum);
 >>>>>>> parent of f5bd683 (The woman who has no imagination has no wings)
+=======
+	if ((dup = malloc (size)) == NULL)
+		return (NULL);
+>>>>>>> parent of 9f0bec9 (The woman who has no imagination has no wings)
 
 	(void)memcpy(dup, str, size);
 
