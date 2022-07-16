@@ -1,6 +1,9 @@
 #include "main.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 7f7693d (Your subconscious is looking for the dreamer)
 
 int _sqrt_recursion(int n);
 int _sqrt(int n, int r);
