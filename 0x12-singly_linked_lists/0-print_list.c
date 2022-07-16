@@ -1,5 +1,11 @@
 #include "lists.h"
+<<<<<<< HEAD
 
+=======
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+>>>>>>> parent of 7f8a414 (Print list)
 /**
  * print_list - prinst elements of a linked list
  * @h: linked list
