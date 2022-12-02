@@ -4,7 +4,7 @@
 /**
  * *_strdup - returns a pointer to a new string, a duplicate of the string str
  * @str: string to be copied
- * Returns: NULL if str = NULL,
+ * Return: NULL if str = NULL,
  *	a pointer to the duplicated string,
  *	NULL if insufficient memory was available.
  */
