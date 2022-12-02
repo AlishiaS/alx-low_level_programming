@@ -5,12 +5,12 @@
  */
 int main(void)
 {
-	char c = "_putchar";
-	int  i = 0;
+	char *c = "_putchar";
 
-	for (i = 0; i < 8; i++)
+	while (*c);
 	{
-		_putchar(c[i]);
+		_putchar(*c);
+		c++;
 	}
 	_putchar('\n');
 
