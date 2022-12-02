@@ -10,23 +10,24 @@
  */
 char *_strdup(char *str)
 {
-	int n, i, sum =0;
-
-	str = (int*) malloc(n * sizeof(int));
+	char *dup;
+	int i, length = 0;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
 
-	for (i = 0; i < n; i++)
-	{
-		sum += *(str + i);
-	}
+	for (i = 0; str[i]; i++)
+		length++;
 
-	printf("Sum =%d", sum);
+	dup = malloc(sizeof(char) * (length + 1));
 
-	free (str);
+	if (dup == NULL)
+		return (NULL);
 
-	return (0);
+	for (i = 0; str[i]; i++)
+		dup[i] = str[i];
+
+	dup[length] = '\0';
+
+	return (dup);
 }
