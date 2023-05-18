@@ -8,23 +8,19 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *table = NULL;
-	int i;
+	hash_table_t *ht;
+	unsigned long int i;
 
-	if (size < 1)
-		return NULL;
-
-	table = malloc(sizeof(hash_table_t));
-	if (table == NULL)
+	ht = malloc(sizeof(hash_table_t));
+	if (ht == NULL)
 		return (NULL);
 
-	table->entries = malloc(sizeof(hash_node_t *) * size);
-	if (table->entries == NULL)
+	ht->size = size;
+	ht->array = malloc(sizeof(hash_node_t *) * size);
+	if (ht->array == NULL)
 		return (NULL);
-
-	table->size = size;
 	for (i = 0; i < size; i++)
-		table->entries[i] = NULL;
+		ht->array[i] = NULL;
 
-	return table;
+	return (ht);
 }
