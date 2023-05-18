@@ -8,48 +8,39 @@
  * @...: A variable number of arguments to be printed.
  *
  * Description: Any argument not of type char, int, float,
- *              or char * is ignored.
+ *              or char * is ignored,
  *              If a string argument is NULL, (nil) is printed instead.
  */
 
 void print_all(const char * const format, ...)
 {
-	va_list valist;
-	int n = 0, i = 0;
-	char *sep = ", ";
-	char *str;
+	va_list args;
+	va_start(args, format);
 
-	va_start(valist, format);
+	const char *ptr = format;
+	char c;
+	int i;
+	float f;
+	char *s;
 
-	while (format && format[i])
-		i++;
-
-	while (format && format[n])
-	{
-		if (n  == (i - 1))
-		{
-			sep = "";
+	while (*ptr != '\0') {
+		if (*ptr == 'c'){
+			c = (char)va_arg(args, int);
+			printf("%c", c);
+		} else if (*ptr == 'i'){
+			i = va_arg(args, int);
+			printf("%d", i);
+		} else if (*ptr =='s') {
+			s = va_arg(args, char*);
+			if (s == NULL){
+				printf("(nil)");
+			} else {
+				printf("%s", s);
+			}
 		}
-		switch (format[n])
-		{
-		case 'c':
-			printf("%c%s", va_arg(valist, int), sep);
-			break;
-		case 'i':
-			printf("%d%s", va_arg(valist, int), sep);
-			break;
-		case 'f':
-			printf("%f%s", va_arg(valist, double), sep);
-			break;
-		case 's':
-			str = va_arg(valist, char *);
-			if (str == NULL)
-				str = "(nil)";
-			printf("%s%s", str, sep);
-			break;
-		}
-		n++;
+		ptr++;
 	}
-	printf("\n");
-	va_end(valist);
+
+	va_end(args);
+	printf{"\n"};
 }

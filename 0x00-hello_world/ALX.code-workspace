@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../alx-higher_level_programming"
+		},
+		{
+			"path": "../../alx-system_engineering-devops"
+		},
+		{
+			"path": "../../binary_trees"
+		},
+		{
+			"path": "../../sorting_algorithms-1"
+		},
+		{
+			"path": "../../AirBnB_clone"
+		},
+		{
+			"path": "../../AirBnB_clone_v2"
+		},
+		{
+			"path": "../../AirBnB_clone_v3"
+		},
+		{
+			"path": "../../AirBnB_clone_v4"
+		},
+		{
+			"name": "AirBnB_clone-1",
+			"path": "../../AirBnB_clone-1"
+		}
+	],
+	"settings": {}
+}
